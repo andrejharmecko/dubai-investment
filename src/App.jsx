@@ -82,7 +82,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 export default function DubaiDashboard() {
   // Editable assumptions
   const [fx, setFx] = useState(6.0);
-  const [salary, setSalary] = useState(45000);
+  const [salary, setSalary] = useState(120000);
   const [companyProfit, setCompanyProfit] = useState(1000000);
   const [czRent, setCzRent] = useState(15000);
   const [debtParents, setDebtParents] = useState(2000000);
@@ -240,7 +240,7 @@ export default function DubaiDashboard() {
 
               <p className="text-xs font-semibold mb-2 mt-2" style={{ color: COLORS.cyan }}>EXCHANGE & INCOME</p>
               <SliderInput label="CZK/AED Rate" value={fx} onChange={setFx} min={4} max={8} step={0.1} />
-              <SliderInput label="Monthly Savings" value={salary} onChange={setSalary} min={20000} max={80000} step={5000} unit="CZK" />
+              <SliderInput label="Monthly Salary" value={salary} onChange={setSalary} min={50000} max={250000} step={5000} unit="CZK" />
               <SliderInput label="Company Profit/yr" value={companyProfit} onChange={setCompanyProfit} min={0} max={3000000} step={100000} unit="CZK" />
 
               <p className="text-xs font-semibold mb-2 mt-4" style={{ color: COLORS.cyan }}>RENTAL YIELDS</p>
